@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+<!-- This is my comment -->
+<!-- Tim P. - Template-->
+
+
+
+<meta charset="UTF-8">
+<meta name="description" content="CWeb 1010 at Dunwoody">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Tim">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>HTML - Template</title>
+
+<style> 
+
+body {
+	backround-color: white;
+	}
+
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto auto auto;
+background-color: #f7b707;
+grid-template-rows: 400px 400px 400px 400px 400px 400px;
+padding: 30px;
+gap: 50px;
+}
+
+
+
+.grid-item {
+background-color: #F7C81C;
+border: 1px solid rgba(0, 0, 0, 0.8);
+outline: dotted 40px;
+outline-color: indianred;
+padding: 20px;
+font-size: 30px;
+text-align: center;
+margin: 15px;
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 15px 0;
+font-size: 30px;
+}
+
+
+
+.item1{
+	grid-column: 1/5;
+}
+
+.item3{
+	grid-column: 6;
+}
+
+
+.item17{
+	grid-column: 2/ span 2;
+}
+
+.item6{
+	grid-column: 3/ span 3;
+}
+
+.item9{
+	grid-column: 2/ span 3;
+}
+
+.item14{
+	grid-column: 3/ span 3;
+}
+
+.item23{
+	grid-column: 3/ span 3;
+}
+
+
+@media only screen and (max-width: 600px) {
+body {
+background-color: #b30000;
+}
+
+
+</style>
+
+<body>
+<div class="grid-container">
+	<div class="item1">1</div>
+	<div class="grid-item"><p>2</p></div>
+	<div class="item3"><p>3</p></div>
+	<div class="grid-item"><p>4</p></div>
+	<div class="grid-item"><p>5</p></div>
+	<div class="item6"><p>6</p></div>
+	<div class="grid-item"><p>7</p></div>
+	<div class="grid-item"><p>8</p></div>
+	<div class="item9"><p>9</p></div>
+	<div class="grid-item"><p>10</p></div>
+	<div class="grid-item"><p>11</p></div>
+	<div class="grid-item"><p>12</p></div>
+	<div class="grid-item"><p>13</p></div>
+	<div class="item14"><p>14</p></div>
+	<div class="grid-item"><p>15</p></div>
+	<div class="grid-item"><p>16</p></div>
+	<div class="item17"><p>17</p></div>
+	<div class="grid-item"><p>18</p></div>
+	<div class="grid-item"><p>19</p></div>
+	<div class="grid-item"><p>20</p></div>
+	<div class="grid-item"><p>21</p></div>
+	<div class="grid-item"><p>22</p></div>
+	<div class="item23"><p>23</p></div>
+	<div class="grid-item"><p>24</p></div>
+
+
+</div>
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
