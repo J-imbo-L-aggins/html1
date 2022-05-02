@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+
+<!-- Tim P. - Lab 4-->
+
+
+
+<meta charset="UTF-8">
+<meta name="description" content="CWeb 1010 at Dunwoody">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Tim P.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>Media Queries</title>
+
+<style>
+
+body{
+	font-family: 'Lato', arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #1e6ceb;
+	background-color: darkblue;
+
+
+} 
+
+
+
+.grid-container {
+display: grid;
+height: 1200px;
+grid-template-columns: 500px 450px 480px;
+background-color: #4267DE;
+grid-template-rows: 100px 200px 300;
+grid-row-gap: 50px;
+background-color: #eb741e;
+padding: 10px;
+gap: 10px;
+border-style: double;
+border-color: black;
+border-width: 15px;
+}
+
+
+
+.grid-item {
+background-color: #1e6ceb;
+gap: 10px;
+padding: 10px;
+margin: 15px;
+border-width:10px ;
+border-style: outset;
+border-color: black;
+}
+
+.item1 {
+grid-column: 1 / span 3;
+grid-row: 1;
+border-width:10px ;
+border-style: outset;
+border-color: black;
+}
+
+
+
+
+.item4 {
+	grid-column: 2;
+	grid-row: 2;
+	border-width:10px ;
+	border-style: outset;
+	border-color: black;
+}
+
+
+
+.item5 {
+grid-column: 1 / span 3;
+grid-row: 3;
+border-width:10px ;
+border-style: outset;
+border-color: black;
+}
+
+/* Begin Media Queries */
+
+
+@media only screen and (max-width: 1024px) {
+	body {
+	background-color: purple;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+	background-color: blue;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	}
+}
+</style>
+
+<body>
+
+	<div id="container">
+        
+        <h1>Expand your music experience!</h1>
+        <h2>SwissBeatbox</h2>
+        
+        <button onclick="openWin()">Visit Page</button>
+        <button onclick="closeWin()">Close Page</button>
+        
+        <script>
+            var myWindow;
+            
+            // Open/Close buttons
+            function openWin() {
+                myWindow = window.open("https://swissbeatbox.com/","","width=800,height=800");
+            }
+            
+            function closeWin() {
+                myWindow.close();
+            }
+        </script>
+        
+        <p>&nbsp;</p>
+        <h1>Change background</h1>
+        
+        <input type="button" value="Change Background Color" onClick=	"document.body.style.backgroundColor = 'purple';">
+        
+        <p>&nbsp;</p>
+        
+        <h1>Reload Page</h1>
+        <input type="button" value="Reload Page + Change Background Color" onClick="document.location.reload(true)">
+
+        
+        
+        
+    </div>
+
+<div class="grid-container">
+
+<div class="grid-item item1"><img src="swissbeatbox.jpg" alt="swiss1" width="100%" height="100%">
+</div>
+
+<div class="grid-item item2"><img src="swissbeatbox4.jpg" alt="swiss4" width="100%" height="100%">
+</div>
+
+<div class="grid-item item3"><img src="swissbeatbox3.jpg" alt="swiss3" width="100%" height="100%">
+</div>
+
+<div class="grid-item item4"><img src="swissbeatbox2.jpg" alt="swiss2" width="100%" height="100%">
+</div>
+	
+
+
+</div>
+</body>
+</head>
+</html>
+
